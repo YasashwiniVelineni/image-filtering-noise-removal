@@ -1,8 +1,7 @@
 #image filtering & noise removal
 import cv2
 
-img = cv2.imread("/content/dog")
-
+img = cv2.imread("flowers.jpg")
 gaussian = cv2.GaussianBlur(img, (5,5), 0)
 
 median = cv2.medianBlur(img, 5)
